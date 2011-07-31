@@ -1,0 +1,3 @@
+# JBL's second attempt...
+
+... at the Sample Application from the Ruby on Rails Tutorial.
