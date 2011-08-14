@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    ZenTest (4.6.0)
     abstract (1.0.0)
     actionmailer (3.0.9)
       actionpack (= 3.0.9)
@@ -31,12 +30,6 @@ GEM
     activesupport (3.0.9)
     annotate (2.4.0)
     arel (2.0.10)
-    autotest (4.4.6)
-      ZenTest (>= 4.4.1)
-    autotest-fsevent (0.2.4)
-      sys-uname
-    autotest-growl (0.2.9)
-    autotest-rails-pure (4.1.2)
     builder (2.1.2)
     diff-lcs (1.1.2)
     erubis (2.6.6)
@@ -92,12 +85,12 @@ GEM
       rspec (~> 2.6.0)
     spork (0.9.0.rc8)
     sqlite3-ruby (1.2.5)
-    sys-uname (0.8.5)
     thor (0.14.6)
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.29)
+    watchr (0.7)
     webrat (0.7.1)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -109,10 +102,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (= 2.4.0)
-  autotest (= 4.4.6)
-  autotest-fsevent (= 0.2.4)
-  autotest-growl (= 0.2.9)
-  autotest-rails-pure (= 4.1.2)
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
   gravatar_image_tag (= 1.0.0.pre2)
@@ -120,5 +109,6 @@ DEPENDENCIES
   rspec-rails (= 2.6.1)
   spork (= 0.9.0.rc8)
   sqlite3-ruby (= 1.2.5)
+  watchr (~> 0.7)
   webrat (= 0.7.1)
   will_paginate (= 3.0.pre2)
