@@ -3,8 +3,13 @@
 	<head>
 		<title><%= title %></title>
 		<%= csrf_meta_tag %>   <!-- prevents a cross-site request forgery -->
+		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen'%>
+		<%= stylesheet_link_tag 'blueprint/print',  :media => 'print'%>
+			<!-- stylesheet_link_tag  is a rails command that includes stylesheets -->
 	</head>
 	<body>
 		<%= yield %>
 	</body>
+	<!-- This is a layout file for the entire site.  Everything except the body is rendered
+	in the same way on every page in the site. -->
 </html>
