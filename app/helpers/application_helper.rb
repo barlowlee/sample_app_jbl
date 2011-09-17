@@ -13,4 +13,5 @@ module ApplicationHelper
   # A helper creates methods that can be called by views through embedded Ruby
   #    in this case 'title' will be called by 'application.html.erb' which is the
   #    main layout file for this site.
+  #    The instance varable @title comes from the Pages controller
 end
