@@ -3,36 +3,17 @@
 	<head>
 		<title><%= title %></title>
 		<%= csrf_meta_tag %>   <!-- prevents a cross-site request forgery -->
-		<!--[if lt IE 9]>
-		<script src=http://html5shiv.googlecode.com/svn/trunk/html5.js".</script>"
-		<![endif]-->
-		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-		<%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-			<!-- stylesheet_link_tag  is a rails command that includes stylesheets -->
-		<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-		<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+		<%= render 'layouts/stylesheets' %>  <!-- A "partial" - don't use the underscore here -->
 	</head>
 	<!-- the blueprint framework expects the entire body to be inside a div, with the class name "container"-->
 	<body>
 		<div class="container">
 			<!-- header tag is new in html5 -->
-			<header>
-				<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
-				<!-- note that there are parentheses here, that don't appear with the "stylesheet_link_tag"
-				command above.  This is for something Hartl will add later, having to do with
-				making the image clickable -->
-				<nav class="round">
-					<ul>
-						<li><%= link_to "Home", '#' %></li>
-						<li><%= link_to "Help", '#' %></li>
-						<li><%= link_to "Sign your life away", '#' %></li>
-						<!-- the # is a stub to allow us to use named routes later -->
-					</ul>
-				</nav>
-			</header>
+			<%= render 'layouts/header' %>
 			<section class="round">
 				<%= yield %>				
 			</section>
+			<%= render 'layouts/footer' %>
 	</body>
 	<!-- This is a layout file for the entire site.  Everything except the body is rendered
 	in the same way on every page in the site. -->
