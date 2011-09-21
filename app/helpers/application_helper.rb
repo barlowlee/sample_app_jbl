@@ -2,7 +2,7 @@ module ApplicationHelper
   # Return a title on a per-page basis.
   def title
     base_title =  "Ruby on Rails Tutorial Sample App"
-    if @title.nil?
+    if @title.nil? # @title is defined in pages_controller.rb
       base_title   # Ruby functions return the last value
     else
       "#{base_title} | #{@title}"  # this is called "string interpolation -

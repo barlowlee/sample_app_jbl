@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><%= title %></title>
+		<title><%= title %></title>  <!-- title in this case is an action defined in 
+			application_helper.rb -->
 		<%= csrf_meta_tag %>   <!-- prevents a cross-site request forgery -->
 		<%= render 'layouts/stylesheets' %>  <!-- A "partial" - don't use the underscore here -->
 	</head>
