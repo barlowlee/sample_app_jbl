@@ -10,6 +10,10 @@ module ApplicationHelper
                                    #  interpolating a nil variable produces the empty string, not nil
     end
   end
+  
+  def logo
+    image_tag("logo.png", :alt => "Sample App", :class => "round")
+  end
   # A helper creates methods that can be called by views through embedded Ruby
   #    in this case 'title' will be called by 'application.html.erb' which is the
   #    main layout file for this site.

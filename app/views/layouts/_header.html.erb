@@ -1,12 +1,16 @@
 <header>
-	<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+	<%= link_to logo, root_path %>
+<!-- if you didn't have the parentheses after image_tag, rails wouldn't have known
+whether the parameter belonged to link_to or image_tag -->
+	
+	
 	<!-- note that there are parentheses here, that don't appear with the "stylesheet_link_tag"
 	command above.  This is for something Hartl will add later, having to do with
 	making the image clickable -->
 	<nav class="round">
 		<ul>
-			<li><%= link_to "Home", '#' %></li>
-			<li><%= link_to "Help", '/help' %></li>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "Help", help_path %></li>
 			<li><%= link_to "Sign your life away", '#' %></li>
 			<!-- the # is a stub to allow us to use named routes later -->
 		</ul>

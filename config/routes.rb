@@ -1,11 +1,12 @@
 SampleAppJbl::Application.routes.draw do
+  root :to => 'pages#home'
+  # get "pages/home"  
   match '/contact', :to => 'pages#contact'
   # get "pages/contact"  - the "match" action above takes the place of this get pages/contact line
   match '/about', :to => 'pages#about'
   # get "pages/about"
   match '/help', :to => 'pages#help'
   # get "pages/help"
-  get "pages/home"  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
